@@ -59,8 +59,6 @@ def getExpandedImage(dim1, dim2):
     return [[[255, 255, 255, 255] for i in range(dim1)] for j in range(dim2)]
 
 def main():
-    smallImScale = 8 #how close pics are
-    quality = 4 #lower is better, best is 1, but will take a LONG time (only integers)
     image = imageio.imread('mainImage.png')
     newDim = (int(image.shape[1]/quality), int(image.shape[0]/quality))
     image = np.array(Image.fromarray(image).resize(newDim))
@@ -88,4 +86,6 @@ def main():
 
 if __name__ == '__main__':
     baseSize = 16
+    smallImScale = 8 #how close pics are
+    quality = 4 #lower is better, best is 1, but will take a LONG time (only integers)
     main()
