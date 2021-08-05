@@ -8,3 +8,5 @@ You can adjust things like default size of the small images (baseSize), how far 
 their respective initial values. You can find all of them at the bottom of the code.
 
 After running the code, you should find a png file called finalImg in the folder. This is the main image represented by smaller images.
+
+The result should look something like the example I created.
