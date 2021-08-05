@@ -5,9 +5,7 @@ import numpy as np
 from PIL import Image
 
 def getAvgColor(pixelmap):
-    red = []
-    green = []
-    blue = []
+    red, green, blue = [], [], []
     zeros = 0
     for row in pixelmap:
         for pixel in row:
